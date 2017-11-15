@@ -15,8 +15,9 @@ def cosine(DTM):
     #eturn pairwise_distances(DTM,Y=DTM, metric="cosine")
     return cosine_similarity(DTM, DTM)
 
-def hellinger3(p, q):
-    return np.sqrt(np.sum((np.sqrt(p) - np.sqrt(q)) ** 2)) / np.sqrt(2)
+def hellinger3(DTM):
+    DTM = nomalize(DTM)
+    return euclidean(DTM) / np.sqrt(2)
 
 def nomalize(DTM):
     pass

@@ -23,5 +23,4 @@ class BookWisdom(Books):
                     text+=line
             ch+=1
             output_dict[ch] = text
-        import pdb;pdb.set_trace()
         return output_dict
