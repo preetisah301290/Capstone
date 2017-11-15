@@ -30,7 +30,6 @@ class AllBooks(Books):
             chapter_indices[book.book_name] = (chapter_start, chapter_start+len(d['chapter_labels'])-1)
             chapter_start = chapter_start+len(d['chapter_labels'])
         DTM = get_DTM_from_counter(total_counter,dicts=[bow_d[i] for i in self.book_names])
-        import pdb; pdb.set_trace()
         self.dict["DTM"] = DTM
         self.dict["bag_of_words"] = total_counter
         self.dict["chapter_indices"] = chapter_indices
