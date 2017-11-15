@@ -101,8 +101,8 @@ def execute_similatity_matrix(DTM, type="all", label="baseline", col_row_labels=
     print("Executing Similarity for {} and {}".format(type, label))
     for k, func_sim in  similarity_matrix_dict.items():
         sm = np.array(func_sim(DTM))
-        #print("{}_similarity:".format(k),sm)
-        np.savetxt('DataCSV/{}_{}{}Similarity.csv'.format(type, label,k), sm, fmt='%f', delimiter=',')
+        headers = ','.join(col_row_labels)
+        np.savetxt('DataCSV/{}_{}{}Similarity.csv'.format(type, label,k), sm, fmt='%f', delimiter=',', header=headers)
         plot_heatmap(sm, col_row_labels, col_row_labels,'DataPlots/{}_{}{}Similarity.png'.format(type,label,k))
 
 

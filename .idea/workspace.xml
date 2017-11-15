@@ -1,8 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2b15a495-d540-4b50-8ae9-cddb18d8d646" name="Default" comment="merge preeti code">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+    <list default="true" id="2b15a495-d540-4b50-8ae9-cddb18d8d646" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataPickle/AllBooks.pickle" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataPickle/BookEccleasiasticus.pickle" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataPickle/BookEcclesiastes.pickle" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataPickle/BookProverb.pickle" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataPickle/BookWisdom.pickle" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataPickle/Upnishad.pickle" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataPickle/YogaSutra.pickle" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataCSV/AllBooks_baselineCosineSimilarity.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataCSV/AllBooks_baselineEuclideanSimilarity.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataCSV/AllBooks_baselineJaccardSimilarity.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataCSV/AllBooks_baselineManhattanSimilarity.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataCSV/AllBooks_baselinebhattacharyyaSimilarity.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataCSV/BookProverb_baselineEuclideanSimilarity.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataCSV/BookProverb_baselineJaccardSimilarity.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataCSV/Upnishad_baselineCosineSimilarity.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataCSV/Upnishad_baselineEuclideanSimilarity.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataCSV/Upnishad_baselineJaccardSimilarity.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataCSV/Upnishad_baselineManhattanSimilarity.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataCSV/Upnishad_baselinebhattacharyyaSimilarity.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataCSV/YogaSutra_baselineCosineSimilarity.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataCSV/YogaSutra_baselineEuclideanSimilarity.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataCSV/YogaSutra_baselineJaccardSimilarity.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataCSV/YogaSutra_baselineManhattanSimilarity.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataCSV/YogaSutra_baselinebhattacharyyaSimilarity.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/books/AllBooks.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/books/BookEccleasiasticus.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/books/BookEcclesiastes.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/books/BookProverb.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/books/BookWisdom.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/books/Buddhist.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/books/Taoteching.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/books/Upnishad.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/books/YogaSutra.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/books/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project_main.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/BookEccleasiasticus.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/BookEcclesiastes.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/BookProverb.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/BookWisdom.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DataPlots/TaoTeChing_baselineCosineSimilarity.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DataPlots/TaoTeChing_baselineEuclideanSimilarity.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DataPlots/TaoTeChing_baselineJaccardSimilarity.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DataPlots/TaoTeChing_baselineManhattanSimilarity.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DataPlots/TaoTeChing_baselinebhattacharyyaSimilarity.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DataPlots/buddhist_baselineCosineSimilarity.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DataPlots/buddhist_baselineEuclideanSimilarity.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DataPlots/buddhist_baselineJaccardSimilarity.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DataPlots/buddhist_baselineManhattanSimilarity.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DataPlots/buddhist_baselinebhattacharyyaSimilarity.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DataPlots/tao_buddhist_baselineCosineSimilarity.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DataPlots/tao_buddhist_baselineEuclideanSimilarity.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DataPlots/tao_buddhist_baselineJaccardSimilarity.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DataPlots/tao_buddhist_baselineManhattanSimilarity.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DataPlots/tao_buddhist_baselinebhattacharyyaSimilarity.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TaoTeChing.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Upanishad.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/YogaSutra.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cross_processing.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project_preeti.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_code.py" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BookEccleasiasticus.txt" afterPath="$PROJECT_DIR$/DataInput/BookEccleasiasticus.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BookEcclesiastes.txt" afterPath="$PROJECT_DIR$/DataInput/BookEcclesiastes.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BookProverb.txt" afterPath="$PROJECT_DIR$/DataInput/BookProverb.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BookWisdom.txt" afterPath="$PROJECT_DIR$/DataInput/BookWisdom.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/TaoTeChing.txt" afterPath="$PROJECT_DIR$/DataInput/TaoTeChing.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Upnishads.txt" afterPath="$PROJECT_DIR$/DataInput/Upnishads.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/YogaSutra.txt" afterPath="$PROJECT_DIR$/DataInput/YogaSutra.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataPickle/buddhist.pickle" afterPath="$PROJECT_DIR$/DataPickle/buddhist.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataPickle/taoteching.pickle" afterPath="$PROJECT_DIR$/DataPickle/taoteching.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/constants.py" afterPath="$PROJECT_DIR$/constants.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/util.py" afterPath="$PROJECT_DIR$/util.py" />
     </list>
     <ignored path="untitled4.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,11 +94,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="cross_processing.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cross_processing.py">
+      <file leaf-file-name="AllBooks.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/books/AllBooks.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="98" selection-start-line="16" selection-start-column="77" selection-end-line="16" selection-end-column="98" />
+              <caret line="39" column="104" selection-start-line="39" selection-start-column="94" selection-end-line="39" selection-end-column="104" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -35,25 +106,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TaoTeChing.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TaoTeChing.py">
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/books/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="44" column="58" selection-start-line="44" selection-start-column="58" selection-end-line="44" selection-end-column="58" />
+              <caret line="50" column="74" selection-start-line="50" selection-start-column="74" selection-end-line="50" selection-end-column="74" />
               <folding>
-                <element signature="e#0#18#0" expanded="true" />
+                <element signature="e#0#33#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Buddhist.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Buddhist.py">
+      <file leaf-file-name="project_main.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project_main.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="46" column="58" selection-start-line="46" selection-start-column="58" selection-end-line="46" selection-end-column="58" />
+              <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
               <folding>
-                <element signature="e#0#35#0" expanded="true" />
+                <element signature="e#0#15#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -63,7 +134,7 @@
         <entry file="file://$PROJECT_DIR$/constants.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <caret line="12" column="38" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="38" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -71,11 +142,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="util.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="util.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/util.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="88" column="13" selection-start-line="88" selection-start-column="13" selection-end-line="88" selection-end-column="13" />
+            <state vertical-scroll-proportion="1.0437018">
+              <caret line="104" column="117" selection-start-line="104" selection-start-column="117" selection-end-line="104" selection-end-column="117" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -83,41 +154,40 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="umath.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.PyCharm50/system/python_stubs/1013586911/numpy/core/umath.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="2213" column="4" selection-start-line="2213" selection-start-column="4" selection-end-line="2213" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_code.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_code.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-              <folding>
-                <element signature="e#21#33#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="project_preeti.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/project_preeti.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.95652175">
-              <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/books/Buddhist.py" />
+        <option value="$PROJECT_DIR$/constants.py" />
+        <option value="$PROJECT_DIR$/books/Upnishad.py" />
+        <option value="$PROJECT_DIR$/books/Taoteching.py" />
+        <option value="$PROJECT_DIR$/YogaSutra.py" />
+        <option value="$PROJECT_DIR$/books/YogaSutra.py" />
+        <option value="$PROJECT_DIR$/books/BookProverb.py" />
+        <option value="$PROJECT_DIR$/BookEcclesiastes.py" />
+        <option value="$PROJECT_DIR$/books/BookEcclesiastes.py" />
+        <option value="$PROJECT_DIR$/books/BookEccleasiasticus.py" />
+        <option value="$PROJECT_DIR$/project_preeti.py" />
+        <option value="$PROJECT_DIR$/books/BookWisdom.py" />
+        <option value="$PROJECT_DIR$/cross_processing.py" />
+        <option value="$PROJECT_DIR$/books/__init__.py" />
+        <option value="$PROJECT_DIR$/books/AllBooks.py" />
+        <option value="$PROJECT_DIR$/project_main.py" />
+        <option value="$PROJECT_DIR$/util.py" />
+      </list>
+    </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
@@ -174,7 +244,29 @@
       </pane>
     </panes>
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\anil8\Desktop\Mooman\preeti\Capstone\DataInput" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.project_main">
+    <configuration default="false" name="project_main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled4" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/project_main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -297,8 +389,19 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Python.project_main" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Python.project_main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="2b15a495-d540-4b50-8ae9-cddb18d8d646" name="Default" comment="" />
@@ -318,7 +421,13 @@
       <option name="project" value="LOCAL" />
       <updated>1510724734370</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="test">
+      <created>1510725334219</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1510725334219</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -327,24 +436,32 @@
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26860118" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32850242" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32475883" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36876008" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3252818" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3252818" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3697749" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -352,7 +469,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value=" fv" />
     <MESSAGE value="merge preeti code" />
-    <option name="LAST_COMMIT_MESSAGE" value="merge preeti code" />
+    <MESSAGE value="test" />
+    <MESSAGE value="optimization" />
+    <option name="LAST_COMMIT_MESSAGE" value="optimization" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -361,23 +480,11 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cross_processing.py">
+    <entry file="file://$USER_HOME$/.PyCharm50/system/python_stubs/1013586911/numpy/core/umath.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="98" selection-start-line="16" selection-start-column="77" selection-end-line="16" selection-end-column="98" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TaoTeChing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="44" column="58" selection-start-line="44" selection-start-column="58" selection-end-line="44" selection-end-column="58" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
+          <caret line="2213" column="4" selection-start-line="2213" selection-start-column="4" selection-end-line="2213" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -416,124 +523,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="2213" column="4" selection-start-line="2213" selection-start-column="4" selection-end-line="2213" selection-end-column="4" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_code.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding>
-            <element signature="e#21#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project_preeti.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cross_processing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="98" selection-start-line="16" selection-start-column="77" selection-end-line="16" selection-end-column="98" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TaoTeChing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="44" column="58" selection-start-line="44" selection-start-column="58" selection-end-line="44" selection-end-column="58" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Buddhist.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="46" column="58" selection-start-line="46" selection-start-column="58" selection-end-line="46" selection-end-column="58" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/constants.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="88" column="13" selection-start-line="88" selection-start-column="13" selection-end-line="88" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm50/system/python_stubs/1013586911/numpy/core/umath.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2213" column="4" selection-start-line="2213" selection-start-column="4" selection-end-line="2213" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_code.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding>
-            <element signature="e#21#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project_preeti.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cross_processing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TaoTeChing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="69" column="48" selection-start-line="69" selection-start-column="42" selection-end-line="69" selection-end-column="48" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -553,36 +542,6 @@
           <caret line="74" column="9" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project_preeti.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="37" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cross_processing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TaoTeChing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="69" column="48" selection-start-line="69" selection-start-column="42" selection-end-line="69" selection-end-column="48" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -607,61 +566,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project_preeti.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Anaconda3/Lib/site-packages/nltk/corpus/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334">
           <caret line="200" column="0" selection-start-line="200" selection-start-column="0" selection-end-line="200" selection-end-column="0" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TaoTeChing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="44" column="58" selection-start-line="44" selection-start-column="58" selection-end-line="44" selection-end-column="58" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataPlots/TaoTeChing_baselineCosineSimilarity.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataPlots/buddhist_baselineEuclideanSimilarity.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataPlots/buddhist_baselineCosineSimilarity.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cross_processing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="98" selection-start-line="16" selection-start-column="77" selection-end-line="16" selection-end-column="98" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataPlots/tao_buddhist_baselineCosineSimilarity.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
       </provider>
     </entry>
     <entry file="file://C:/Anaconda3/Lib/site-packages/sklearn/utils/extmath.py">
@@ -678,16 +587,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_code.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding>
-            <element signature="e#21#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.PyCharm50/system/python_stubs/1013586911/numpy/core/umath.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -696,47 +595,178 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/constants.py">
+    <entry file="file://$PROJECT_DIR$/DataInput/BookEccleasiasticus.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Buddhist.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="46" column="58" selection-start-line="46" selection-start-column="58" selection-end-line="46" selection-end-column="58" />
+          <caret line="26" column="40" selection-start-line="8" selection-start-column="4" selection-end-line="26" selection-end-column="40" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/util.py">
+    <entry file="file://$PROJECT_DIR$/books/Buddhist.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="88" column="13" selection-start-line="88" selection-start-column="13" selection-end-line="88" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.3478261">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
-            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataPlots/tao_buddhist_baselinebhattacharyyaSimilarity.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/books/Taoteching.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project_preeti.py">
+    <entry file="file://$PROJECT_DIR$/DataInput/BookProverb.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.95652175">
-          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+        <state vertical-scroll-proportion="-20.362637">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/books/YogaSutra.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0274725">
+          <caret line="22" column="43" selection-start-line="0" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#0#69#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/books/BookEcclesiastes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#83#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/books/BookProverb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18681319">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#73#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/books/BookWisdom.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/books/Upnishad.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8406593">
+          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/books/BookEccleasiasticus.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#89#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataInput/Upnishads.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="334" column="1" selection-start-line="332" selection-start-column="0" selection-end-line="334" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataInput/YogaSutra.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2535" column="21" selection-start-line="2533" selection-start-column="3" selection-end-line="2535" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataCSV/AllBooks_baselineJaccardSimilarity.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/constants.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="38" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/books/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="50" column="74" selection-start-line="50" selection-start-column="74" selection-end-line="50" selection-end-column="74" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/books/AllBooks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="39" column="104" selection-start-line="39" selection-start-column="94" selection-end-line="39" selection-end-column="104" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0437018">
+          <caret line="104" column="117" selection-start-line="104" selection-start-column="117" selection-end-line="104" selection-end-column="117" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
