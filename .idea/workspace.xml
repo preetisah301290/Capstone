@@ -2,78 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b15a495-d540-4b50-8ae9-cddb18d8d646" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataPickle/AllBooks.pickle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataPickle/BookEccleasiasticus.pickle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataPickle/BookEcclesiastes.pickle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataPickle/BookProverb.pickle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataPickle/BookWisdom.pickle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataPickle/Upnishad.pickle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataPickle/YogaSutra.pickle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataCSV/AllBooks_baselineCosineSimilarity.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataCSV/AllBooks_baselineEuclideanSimilarity.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataCSV/AllBooks_baselineJaccardSimilarity.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataCSV/AllBooks_baselineManhattanSimilarity.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataCSV/AllBooks_baselinebhattacharyyaSimilarity.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataCSV/BookProverb_baselineEuclideanSimilarity.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataCSV/BookProverb_baselineJaccardSimilarity.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataCSV/Upnishad_baselineCosineSimilarity.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataCSV/Upnishad_baselineEuclideanSimilarity.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataCSV/Upnishad_baselineJaccardSimilarity.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataCSV/Upnishad_baselineManhattanSimilarity.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataCSV/Upnishad_baselinebhattacharyyaSimilarity.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataCSV/YogaSutra_baselineCosineSimilarity.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataCSV/YogaSutra_baselineEuclideanSimilarity.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataCSV/YogaSutra_baselineJaccardSimilarity.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataCSV/YogaSutra_baselineManhattanSimilarity.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataCSV/YogaSutra_baselinebhattacharyyaSimilarity.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/books/AllBooks.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/books/BookEccleasiasticus.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/books/BookEcclesiastes.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/books/BookProverb.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/books/BookWisdom.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/books/Buddhist.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/books/Taoteching.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/books/Upnishad.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/books/YogaSutra.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/books/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project_main.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BookEccleasiasticus.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BookEcclesiastes.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BookProverb.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BookWisdom.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DataPlots/TaoTeChing_baselineCosineSimilarity.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DataPlots/TaoTeChing_baselineEuclideanSimilarity.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DataPlots/TaoTeChing_baselineJaccardSimilarity.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DataPlots/TaoTeChing_baselineManhattanSimilarity.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DataPlots/TaoTeChing_baselinebhattacharyyaSimilarity.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DataPlots/buddhist_baselineCosineSimilarity.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DataPlots/buddhist_baselineEuclideanSimilarity.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DataPlots/buddhist_baselineJaccardSimilarity.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DataPlots/buddhist_baselineManhattanSimilarity.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DataPlots/buddhist_baselinebhattacharyyaSimilarity.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DataPlots/tao_buddhist_baselineCosineSimilarity.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DataPlots/tao_buddhist_baselineEuclideanSimilarity.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DataPlots/tao_buddhist_baselineJaccardSimilarity.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DataPlots/tao_buddhist_baselineManhattanSimilarity.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DataPlots/tao_buddhist_baselinebhattacharyyaSimilarity.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/TaoTeChing.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Upanishad.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/YogaSutra.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cross_processing.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project_preeti.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test_code.py" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/BookEccleasiasticus.txt" afterPath="$PROJECT_DIR$/DataInput/BookEccleasiasticus.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/BookEcclesiastes.txt" afterPath="$PROJECT_DIR$/DataInput/BookEcclesiastes.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/BookProverb.txt" afterPath="$PROJECT_DIR$/DataInput/BookProverb.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/BookWisdom.txt" afterPath="$PROJECT_DIR$/DataInput/BookWisdom.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/TaoTeChing.txt" afterPath="$PROJECT_DIR$/DataInput/TaoTeChing.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Upnishads.txt" afterPath="$PROJECT_DIR$/DataInput/Upnishads.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/YogaSutra.txt" afterPath="$PROJECT_DIR$/DataInput/YogaSutra.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataPickle/buddhist.pickle" afterPath="$PROJECT_DIR$/DataPickle/buddhist.pickle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataPickle/taoteching.pickle" afterPath="$PROJECT_DIR$/DataPickle/taoteching.pickle" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Buddhist.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/constants.py" afterPath="$PROJECT_DIR$/constants.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/util.py" afterPath="$PROJECT_DIR$/util.py" />
     </list>
     <ignored path="untitled4.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -106,10 +36,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/books/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="0.5652174">
               <caret line="50" column="74" selection-start-line="50" selection-start-column="74" selection-end-line="50" selection-end-column="74" />
               <folding>
                 <element signature="e#0#33#0" expanded="true" />
@@ -142,13 +72,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="util.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="util.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/util.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.0437018">
+            <state vertical-scroll-proportion="0.0">
               <caret line="104" column="117" selection-start-line="104" selection-start-column="117" selection-end-line="104" selection-end-column="117" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="YogaSutra.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/books/YogaSutra.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+              <folding>
+                <element signature="e#0#69#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -165,6 +107,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <push-targets>
+      <push-target-info repo="$PROJECT_DIR$" source="preeti" target-remote="origin" target-branch="master" />
+    </push-targets>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -427,7 +372,13 @@
       <option name="project" value="LOCAL" />
       <updated>1510725334219</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="optimization">
+      <created>1510738602616</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1510738602616</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -436,13 +387,13 @@
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26860118" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32850242" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850242" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32475883" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36876008" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3252818" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3252818" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -488,16 +439,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Buddhist.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="46" column="58" selection-start-line="46" selection-start-column="58" selection-end-line="46" selection-end-column="58" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/constants.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -526,32 +467,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Buddhist.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="67" column="34" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/util.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="74" column="9" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Buddhist.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="67" column="34" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -603,16 +524,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Buddhist.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="40" selection-start-line="8" selection-start-column="4" selection-end-line="26" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/books/Buddhist.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3478261">
@@ -638,16 +549,6 @@
         <state vertical-scroll-proportion="-20.362637">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/books/YogaSutra.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0274725">
-          <caret line="22" column="43" selection-start-line="0" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#69#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -741,16 +642,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/books/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="50" column="74" selection-start-line="50" selection-start-column="74" selection-end-line="50" selection-end-column="74" />
-          <folding>
-            <element signature="e#0#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/books/AllBooks.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -763,10 +654,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/util.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0437018">
+        <state vertical-scroll-proportion="0.0">
           <caret line="104" column="117" selection-start-line="104" selection-start-column="117" selection-end-line="104" selection-end-column="117" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/books/YogaSutra.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#69#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/books/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5652174">
+          <caret line="50" column="74" selection-start-line="50" selection-start-column="74" selection-end-line="50" selection-end-column="74" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
           </folding>
         </state>
       </provider>
