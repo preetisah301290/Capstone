@@ -4,13 +4,24 @@ import pickle
 import argparse
 from Buddhist import *
 from TaoTeChing import *
+from BookEccleasiasticus import*
+from BookWisdom import *
+from BookEcclesiastes import *
+from BookProverb import *
 from cross_processing import *
+from YogaSutra import *
+from Upanishad import *
 from util import *
 
 process_step = {
-
     "budhist":[buddhist_preprocess, buddhist_baseline],
-    "chiense":[taoteching_preprocess, taoteching_baseline]
+    "chiense":[taoteching_preprocess, taoteching_baseline],
+    "upnishad":[upnishad_preprocess, upnishad_baseline],
+    "yogasutra":[yogasutra_preprocess, yogasutra_baseline],
+    "BookProverb":[BookProverb_preprocess,BookProverb_baseline],
+    "BookEcclesiastes":[BookEcclesiastes_preprocess,BookEcclesiastes_baseline],
+    "BookEccleasiasticus" :[BookEccleasiasticus_preprocess,BookEccleasiasticus_baseline],
+    "BookWisdom":[BookWisdom_preprocess,BookWisdom_baseline]
     }
 
 #cross_processing_step = []
