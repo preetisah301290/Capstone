@@ -40,16 +40,6 @@ def project_run():
         func()
 
 
-    # finding most similar chapters within buddhism based on chapter index provided
-    #buddhist_find_similarChp(2)
-
-    # finding most similar chapters within Tao-ism
-    #toa_find_similarChp(1)
-
-    # finding most similar chapters from Taoism in buddhism and vice versa
-    #find_similarChp(42)
-
-
 
 if __name__=='__main__':
     project_run()

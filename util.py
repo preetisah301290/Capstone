@@ -1,11 +1,10 @@
 from pylab import *
 import numpy as np
-from sklearn.metrics.pairwise import pairwise_distances, cosine_similarity
 from nltk import word_tokenize, sent_tokenize
 from constants import stop_words
 import re
 from collections import Counter
-
+from similarity import similarity_matrix_dict
 
 def clean_data(data):
     sents = sent_tokenize(data)
@@ -66,35 +65,6 @@ def find_closest_ChapterMatch(DTM, Chapter_colname, skip=[]):
 
     return max_value,max_index
 
-
-def euclidean(DTM):
-    return pairwise_distances(DTM,Y=DTM, metric="euclidean")
-
-def manhattan(DTM):
-    return pairwise_distances(DTM,Y=DTM, metric="manhattan")
-
-def jaccard(DTM):
-    tmp_DTM = np.asarray(DTM, dtype=bool)
-    return pairwise_distances(tmp_DTM,Y=tmp_DTM, metric="jaccard")
-
-def cosine(DTM):
-    #eturn pairwise_distances(DTM,Y=DTM, metric="cosine")
-    return cosine_similarity(DTM, DTM)
-
-def bhattacharyya(DTM):
-    #provided it normalized probabilty
-    DTM = np.array(DTM, dtype=float)
-    DTM = (DTM.T/np.sum(DTM, axis=1)).T
-    BD = -1*np.log(np.sqrt(np.dot(DTM, DTM.T)))
-    return BD
-
-similarity_matrix_dict = {
-    "Cosine": cosine,
-    "Jaccard": jaccard,
-    "Manhattan": manhattan,
-    "Euclidean": euclidean,
-    "bhattacharyya": bhattacharyya
-}
 
 
 def execute_similatity_matrix(DTM, type="all", label="baseline", col_row_labels=[]):
