@@ -16,18 +16,11 @@ class BookEccleasiasticus(Books):
         req = open(self.input_file_path)
         output_dict = {}
         lines = [line for line in req.readlines()]
-        ch = 1
+        ch = 0
         for i,j in BookEccleasiasticus_studyline:
             text=""
             for line in lines[i:j]:
-                if re.match(r"^\d.", line):
-                    if text!="":
-                        output_dict[ch]=text
-                        ch+=1
-                    text=""
-                else:
                     text+=line
-            if text!="":
-                output_dict[ch] = text
-
+            ch+=1
+            output_dict[ch] = text
         return output_dict

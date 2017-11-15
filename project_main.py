@@ -12,10 +12,10 @@ from books.AllBooks import AllBooks
 from util import *
 
 books_to_process = [
-    Buddhist,
-    TaoTeChing,
+    #Buddhist,
+    #TaoTeChing,
     #Upnishad, #161 chapters need to read properly
-    #YogaSutra, #Not Working
+    YogaSutra, #Not Working
     #BookProverb, #Too Big DTM 942 chapters retification Needed
     #BookEcclesiastes, #Too Big DTM 224 chapters retification Needed
     #BookEccleasiasticus, #Nope this is 1592 chapters
