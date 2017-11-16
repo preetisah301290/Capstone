@@ -46,9 +46,11 @@ class Books(object):
         bag_of_words = get_bag_of_words_by_chapter(self.dict['filtered_text'])
         self.dict["bag_of_words"] = bag_of_words
         total_counter = sum([v for v in bag_of_words.values()])
-        DTM = get_DTM_from_counter(total_counter,dicts=[bag_of_words])
+        DTM, unique_words = get_DTM_from_counter(total_counter,dicts=[bag_of_words], return_words=True)
         self.dict["DTM"] = DTM
         row_labels=["ch{}".format(k) for k in self.dict['chapter_labels']]
+        headers = sorted(unique_words, key=unique_words.get)
+        save_to_csv('{}_baseline_DTM.csv'.format(self.book_name),DTM, headers)
         execute_similatity_matrix(DTM,  type=self.book_name, label="baseline", col_row_labels=row_labels)
         of = open(pickle_path+self.book_name+".pickle","wb")
         pickle.dump(self.dict, of)

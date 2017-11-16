@@ -30,10 +30,10 @@ def bhattacharyya(DTM):
     return BD
 
 similarity_matrix_dict = {
-    "Cosine": cosine,
-    "Jaccard": jaccard,
-    "Manhattan": manhattan,
-    "Euclidean": euclidean,
-    #"bhattacharyya": bhattacharyya,
-    #"hellinger": hellinger3
+    "Cosine_Similarity": cosine,
+    "Jaccard_Distance": jaccard,
+    "Manhattan_Distance": manhattan,
+    "Euclidean_Distance": euclidean,
+    #"bhattacharyya_Distance": bhattacharyya,
+    #"hellinger_Distance": hellinger3
 }

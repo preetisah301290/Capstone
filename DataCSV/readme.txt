@@ -1,0 +1,1 @@
+This folder contains all kinds of Similarity matrix and DTM csv files

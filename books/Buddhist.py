@@ -17,7 +17,7 @@ class Buddhist(Books):
         :return: returns a dict by chapters implemented by each book
         """
         try:
-            soup = bs(urlopen(Request(buddhist_link)).read())
+            soup = bs(urlopen(Request(buddhist_link)).read(), 'lxml')
         except Exception as e:
             print(e)
             print("unable to fetch url")
