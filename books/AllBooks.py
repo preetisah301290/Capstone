@@ -13,7 +13,10 @@ class AllBooks(Books):
         self.book_name = "AllBooks"
         self.steps = [
             self.baseline,
-            self.baseline_extend]
+            self.baseline_extend,
+            self.log_baseline,
+            self.log_baseline_extend,
+        ]
         self.all_books = all_books
         self.book_names = []
         self.dict = {}
@@ -39,6 +42,8 @@ class AllBooks(Books):
         headers = sorted(unique_words, key=unique_words.get)
         save_to_csv('{}_baseline_DTM.csv'.format(self.book_name),DTM, headers)
         self.dict["DTM"] = DTM
+        self.dict["unique_words"] = headers
+        self.dict["row_labels"] = row_labels
         self.dict["bag_of_words"] = total_counter
         self.dict["chapter_indices"] = chapter_indices
         self.dict["books"] = self.all_books
@@ -89,3 +94,64 @@ class AllBooks(Books):
             max_l = [[float(y.split('|')[0]) for y in x] for x in max_dist_sim]
             plot_heatmap(np.array(max_l), books_header, books_header,
                          '{}_basline_max_{}.png'.format(self.book_name,k))
+
+    def log_baseline(self):
+        print("processing for {} and baseline log".format(self.book_name))
+        if not self.dict:
+            self.dict = self.get_dict()
+
+        DTM = self.dict["DTM"]
+        headers = self.dict["unique_words"]
+        row_labels = self.dict["row_labels"]
+        DTM = np.array(DTM) + self.bias
+        DTM = np.log(DTM)
+        DTM[DTM<0] = 0.0
+        self.dict["Log_DTM"] = DTM
+        save_to_csv('{}_baseline_log_DTM.csv'.format(self.book_name),DTM, headers)
+        execute_similatity_matrix(DTM,  type=self.book_name, label="baseline_log", col_row_labels=row_labels)
+        of = open(pickle_path+self.book_name+".pickle","wb")
+        pickle.dump(self.dict, of)
+
+    def log_baseline_extend(self):
+        print("processing for {} and  extend baseline log".format(self.book_name))
+        if not self.dict:
+            self.dict = self.get_dict()
+
+        l = len(self.dict["books"])
+        books_header = [b().book_name for b in self.dict["books"]]
+        for k,v in similarity_matrix_dict.items():
+            print("processing for {} and extend baseline log and {}".format(self.book_name, k))
+            data = np.genfromtxt("{}{}_baseline_log_{}.csv".format(csv_path, self.book_name,k),
+                                 dtype=float, delimiter=',', skip_header=1)
+
+            avg_dist_sim = [[0]*l for i in range(l)]
+            median_dist_sim = [[0]*l for i in range(l)]
+            min_dist_sim = [["0"]*l for i in range(l)]
+            max_dist_sim = [["0"]*l for i in range(l)]
+            for i, j in itertools.combinations_with_replacement(range(l), 2):
+                x1,x2 = self.dict["chapter_indices"][books_header[i]]
+                y1,y2 = self.dict["chapter_indices"][books_header[j]]
+                n_data=data[x1:x2+1, y1:y2+1]
+                avg_dist_sim[i][j] = avg_dist_sim[j][i] = np.mean(n_data)
+                median_dist_sim[i][j] = median_dist_sim[j][i] = np.median(n_data)
+                max_dist_sim[i][j] = max_dist_sim[j][i] = "{}|{}|{}".format(
+                        np.max(n_data), *np.unravel_index(n_data.argmax(),n_data.shape))
+                min_dist_sim[i][j] = min_dist_sim[j][i] = "{}|{}|{}".format(
+                        np.min(n_data), *np.unravel_index(n_data.argmin(),n_data.shape))
+
+            save_to_csv('{}_basline_log_avg_{}.csv'.format(self.book_name,k),avg_dist_sim, books_header)
+            save_to_csv('{}_basline_log_median_{}.csv'.format(self.book_name,k),median_dist_sim, books_header)
+            save_to_csv('{}_basline_log_max_{}.csv'.format(self.book_name,k),max_dist_sim, books_header, fmt_type='%s')
+            save_to_csv('{}_basline_log_min_{}.csv'.format(self.book_name,k),min_dist_sim, books_header, fmt_type='%s')
+
+            plot_heatmap(np.array(median_dist_sim), books_header, books_header,
+                         '{}_basline_log_median_{}.png'.format(self.book_name,k))
+            plot_heatmap(np.array(avg_dist_sim), books_header, books_header,
+                         '{}_basline_log_avg_{}.png'.format(self.book_name,k))
+
+            min_l = [[float(y.split('|')[0]) for y in x] for x in min_dist_sim]
+            plot_heatmap(np.array(min_l), books_header, books_header,
+                         '{}_basline_log_min_{}.png'.format(self.book_name,k))
+            max_l = [[float(y.split('|')[0]) for y in x] for x in max_dist_sim]
+            plot_heatmap(np.array(max_l), books_header, books_header,
+                         '{}_basline_log_max_{}.png'.format(self.book_name,k))
