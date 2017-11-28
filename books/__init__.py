@@ -91,9 +91,9 @@ class Books(object):
         unique_tokens = set(filter(lambda x: all_tokens[x] ==1,all_tokens))
         documents = [[word for word in doc if word not in unique_tokens] for doc in documents]
         # Create Dictionary.
-        id2word = corpora.Dictionary(texts)
+        id2word = corpora.Dictionary(documents)
         # Creates the Bag of Word corpus.
-        mm = [id2word.doc2bow(text) for text in texts]
+        mm = [id2word.doc2bow(text) for text in documents]
         lda = models.ldamodel.LdaModel(corpus=mm, id2word=id2word, num_topics=self.num_topics, \
                                update_every=1, chunksize=10000, passes=1)
         lda_corpus = lda[mm]
@@ -107,7 +107,8 @@ class Books(object):
         self.dict["topics"] = topics
         self.dict["topic_names"] = topic_names
         self.dict["LDA_DTM"] = lda_DTM
+        row_labels=["ch{}".format(k) for k in self.dict['chapter_labels']]
         save_to_csv('{}_lda_DTM.csv'.format(self.book_name),lda_DTM, topic_names)
-        execute_similatity_matrix(lda_DTM,  type=self.book_name, label="lda", col_row_labels=topic_names)
+        execute_similatity_matrix(lda_DTM,  type=self.book_name, label="lda", col_row_labels=row_labels)
         of = open(pickle_path+self.book_name+".pickle","wb")
         pickle.dump(self.dict, of)

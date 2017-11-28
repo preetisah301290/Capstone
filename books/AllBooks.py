@@ -195,8 +195,9 @@ class AllBooks(Books):
         self.dict["topics"] = topics
         self.dict["topic_names"] = topic_names
         self.dict["LDA_DTM"] = lda_DTM
+        row_labels = self.dict["row_labels"]
         save_to_csv('{}_lda_DTM.csv'.format(self.book_name),lda_DTM, topic_names)
-        execute_similatity_matrix(lda_DTM,  type=self.book_name, label="lda", col_row_labels=topic_names)
+        execute_similatity_matrix(lda_DTM,  type=self.book_name, label="lda", col_row_labels=row_labels)
         of = open(pickle_path+self.book_name+".pickle","wb")
         pickle.dump(self.dict, of)
 
