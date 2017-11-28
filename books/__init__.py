@@ -1,6 +1,5 @@
 from constants import pickle_path
-from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
-from sklearn.decomposition import NMF, LatentDirichletAllocation
+from gensim import models, corpora
 from util import *
 import pickle
 
@@ -13,14 +12,7 @@ class Books(object):
         self.input_file_path = None
         self.steps = [self.preprocess, self.baseline, self.log_baseline, self.topic_modelling]
         self.bias = 0.000001
-        self.max_df = 0.95
-        self.min_df = 2
-        self.no_of_features = 1000
-        self.no_of_topics = 20
-        self.no_of_top_topics = 10
-        self.max_iter = 5
-        self.learning_offset = 50.0
-        self.random_state = 0
+        self.num_topics = 10
 
     def fetch_data(self):
         """
@@ -86,14 +78,30 @@ class Books(object):
     def topic_modelling(self):
         if not self.dict:
             self.get_dict()
-        """
-        raw_texts = self.dict["raw_text"]
-        documents  = [raw_texts[k] for k in sorted(raw_texts.keys())]
-        tf_vectorizer = CountVectorizer(max_df=self.max_df, min_df=self.min_df,
-                                        max_features=self.no_of_features, stop_words='english')
-        tf = tf_vectorizer.fit_transform(documents)
-        tf_feature_names = tf_vectorizer.get_feature_names()
-        lda = LatentDirichletAllocation(n_topics=self.no_of_topics,
-                                        max_iter=self.max_iter, learning_method='online',
-                                        learning_offset=self.learning_offset,random_state=self.random_state).fit(tf)
-        """
+        texts = self.dict["filtered_text"]
+        documents  = [texts[k] for k in sorted(texts.keys())]
+        all_tokens = Counter(sum(texts, []))
+        unique_tokens = set(filter(lambda x: all_tokens[x] ==1,all_tokens))
+        documents = [[word for word in doc if word not in unique_tokens] for doc in documents]
+        # Create Dictionary.
+        id2word = corpora.Dictionary(texts)
+        # Creates the Bag of Word corpus.
+        mm = [id2word.doc2bow(text) for text in texts]
+        lda = models.ldamodel.LdaModel(corpus=mm, id2word=id2word, num_topics=self.num_topics, \
+                               update_every=1, chunksize=10000, passes=1)
+        lda_corpus = lda[mm]
+        lda_DTM = [[0]*self.num_topics for i in range(len(texts))]
+        for  doc_num, doc in enumerate(lda_corpus):
+            for topic in doc:
+                topic_id,score=topic
+                lda_DTM[doc_num][topic_id] = score
+        topics = lda.print_topics()
+        topic_names = ["Topic{}".format(topic[0]) for topic in topics]
+        self.dict["topics"] = topics
+        self.dict["topic_names"] = topic_names
+        self.dict["LDA_DTM"] = lda_DTM
+        save_to_csv('{}_lda_DTM.csv'.format(self.book_name),lda_DTM, topic_names)
+        execute_similatity_matrix(lda_DTM,  type=self.book_name, label="lda", col_row_labels=topic_names)
+        of = open(pickle_path+self.book_name+".pickle","wb")
+        pickle.dump(self.dict, of)
+        #done

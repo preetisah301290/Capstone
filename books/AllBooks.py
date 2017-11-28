@@ -1,6 +1,7 @@
 from util import *
 from books import Books
 from constants import pickle_path, csv_path, plot_path
+from gensim import models, corpora
 import itertools
 import pickle
 from similarity import similarity_matrix_dict
@@ -20,6 +21,7 @@ class AllBooks(Books):
         self.all_books = all_books
         self.book_names = []
         self.dict = {}
+        self.num_topics = 10
 
     def baseline(self):
         total_counter = Counter()
@@ -155,3 +157,83 @@ class AllBooks(Books):
             max_l = [[float(y.split('|')[0]) for y in x] for x in max_dist_sim]
             plot_heatmap(np.array(max_l), books_header, books_header,
                          '{}_basline_log_max_{}.png'.format(self.book_name,k))
+
+    def topic_modelling(self):
+        print("processing for {} and topic_modelling".format(self.book_name))
+        if not self.dict:
+            self.get_dict()
+
+        texts = []
+        for b in self.all_books:
+            book =b()
+            d = book.get_dict()
+            self.book_names.append(book.book_name)
+            filter_text = d["filtered_text"]
+            texts.extend([filter_text[k] for k in sorted(filter_text.keys())])
+        all_tokens = Counter(sum(texts, []))
+        unique_tokens = set(filter(lambda x: all_tokens[x] ==1,all_tokens))
+        documents = [[word for word in doc if word not in unique_tokens] for doc in texts]
+        chapter_indices = self.dict["chapter_indices"]
+        id2word = corpora.Dictionary(texts)
+        # Creates the Bag of Word corpus.
+        mm = [id2word.doc2bow(text) for text in texts]
+        lda = models.ldamodel.LdaModel(corpus=mm, id2word=id2word, num_topics=self.num_topics, \
+                               update_every=1, chunksize=10000, passes=1)
+        lda_corpus = lda[mm]
+        lda_DTM = [[0]*self.num_topics for i in range(len(texts))]
+        for doc_num, doc in enumerate(lda_corpus):
+            for topic in doc:
+                topic_id,score=topic
+                lda_DTM[doc_num][topic_id] = score
+        topics = lda.print_topics()
+        topic_names = ["Topic{}".format(topic[0]) for topic in topics]
+        self.dict["topics"] = topics
+        self.dict["topic_names"] = topic_names
+        self.dict["LDA_DTM"] = lda_DTM
+        save_to_csv('{}_lda_DTM.csv'.format(self.book_name),lda_DTM, topic_names)
+        execute_similatity_matrix(lda_DTM,  type=self.book_name, label="lda", col_row_labels=topic_names)
+        of = open(pickle_path+self.book_name+".pickle","wb")
+        pickle.dump(self.dict, of)
+
+    def topic_modelling_extend(self):
+        print("processing for {} and  extend topic modeling log".format(self.book_name))
+        if not self.dict:
+            self.dict = self.get_dict()
+        l = len(self.dict["books"])
+        books_header = [b().book_name for b in self.dict["books"]]
+        for k,v in similarity_matrix_dict.items():
+            print("processing for {} and extend topic modelling and {}".format(self.book_name, k))
+            data = np.genfromtxt("{}{}_lda_{}.csv".format(csv_path, self.book_name,k),
+                                 dtype=float, delimiter=',', skip_header=1)
+
+            avg_dist_sim = [[0]*l for i in range(l)]
+            median_dist_sim = [[0]*l for i in range(l)]
+            min_dist_sim = [["0"]*l for i in range(l)]
+            max_dist_sim = [["0"]*l for i in range(l)]
+            for i, j in itertools.combinations_with_replacement(range(l), 2):
+                x1,x2 = self.dict["chapter_indices"][books_header[i]]
+                y1,y2 = self.dict["chapter_indices"][books_header[j]]
+                n_data=data[x1:x2+1, y1:y2+1]
+                avg_dist_sim[i][j] = avg_dist_sim[j][i] = np.mean(n_data)
+                median_dist_sim[i][j] = median_dist_sim[j][i] = np.median(n_data)
+                max_dist_sim[i][j] = max_dist_sim[j][i] = "{}|{}|{}".format(
+                        np.max(n_data), *np.unravel_index(n_data.argmax(),n_data.shape))
+                min_dist_sim[i][j] = min_dist_sim[j][i] = "{}|{}|{}".format(
+                        np.min(n_data), *np.unravel_index(n_data.argmin(),n_data.shape))
+
+            save_to_csv('{}_lda_avg_{}.csv'.format(self.book_name,k),avg_dist_sim, books_header)
+            save_to_csv('{}_lda_median_{}.csv'.format(self.book_name,k),median_dist_sim, books_header)
+            save_to_csv('{}_lda_max_{}.csv'.format(self.book_name,k),max_dist_sim, books_header, fmt_type='%s')
+            save_to_csv('{}_lda_min_{}.csv'.format(self.book_name,k),min_dist_sim, books_header, fmt_type='%s')
+
+            plot_heatmap(np.array(median_dist_sim), books_header, books_header,
+                         '{}_lda_median_{}.png'.format(self.book_name,k))
+            plot_heatmap(np.array(avg_dist_sim), books_header, books_header,
+                         '{}_lda_avg_{}.png'.format(self.book_name,k))
+
+            min_l = [[float(y.split('|')[0]) for y in x] for x in min_dist_sim]
+            plot_heatmap(np.array(min_l), books_header, books_header,
+                         '{}_lda_min_{}.png'.format(self.book_name,k))
+            max_l = [[float(y.split('|')[0]) for y in x] for x in max_dist_sim]
+            plot_heatmap(np.array(max_l), books_header, books_header,
+                         '{}_lda_max_{}.png'.format(self.book_name,k))
