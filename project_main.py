@@ -27,7 +27,7 @@ def project_run():
     parser = argparse.ArgumentParser()
     parser.add_argument("--step", help="starting step")
     args = parser.parse_args()
-    step = 0
+    step = 1
     if not args.step:
         step = int(step)
     for b in books_to_process:

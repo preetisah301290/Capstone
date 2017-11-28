@@ -10,7 +10,11 @@ class Books(object):
         self.input_type = "" #url # text file
         self.input_link = None
         self.input_file_path = None
-        self.steps = [self.preprocess, self.baseline, self.log_baseline, self.topic_modelling]
+        self.steps = [self.preprocess,
+                      self.baseline,
+                      self.log_baseline,
+                      self.topic_modelling,
+                      ]
         self.bias = 0.000001
         self.num_topics = 10
 
@@ -79,8 +83,10 @@ class Books(object):
         if not self.dict:
             self.get_dict()
         texts = self.dict["filtered_text"]
-        documents  = [texts[k] for k in sorted(texts.keys())]
-        all_tokens = Counter(sum(texts, []))
+        documents = []
+        for k in sorted(texts.keys()):
+            documents.extend(texts[k])
+        all_tokens = Counter(documents)
         unique_tokens = set(filter(lambda x: all_tokens[x] ==1,all_tokens))
         documents = [[word for word in doc if word not in unique_tokens] for doc in documents]
         # Create Dictionary.
@@ -91,7 +97,7 @@ class Books(object):
                                update_every=1, chunksize=10000, passes=1)
         lda_corpus = lda[mm]
         lda_DTM = [[0]*self.num_topics for i in range(len(texts))]
-        for  doc_num, doc in enumerate(lda_corpus):
+        for doc_num, doc in enumerate(lda_corpus):
             for topic in doc:
                 topic_id,score=topic
                 lda_DTM[doc_num][topic_id] = score
@@ -104,4 +110,3 @@ class Books(object):
         execute_similatity_matrix(lda_DTM,  type=self.book_name, label="lda", col_row_labels=topic_names)
         of = open(pickle_path+self.book_name+".pickle","wb")
         pickle.dump(self.dict, of)
-        #done

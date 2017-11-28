@@ -17,6 +17,8 @@ class AllBooks(Books):
             self.baseline_extend,
             self.log_baseline,
             self.log_baseline_extend,
+            self.topic_modelling,
+            self.topic_modelling_extend,
         ]
         self.all_books = all_books
         self.book_names = []
