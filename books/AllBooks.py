@@ -175,7 +175,7 @@ class AllBooks(Books):
         all_tokens = []
         for tokens in texts:
             all_tokens.extend(tokens)
-        all_tokens = Counter(sum(texts, []))
+        all_tokens = Counter(all_tokens)
         unique_tokens = set(filter(lambda x: all_tokens[x] ==1,all_tokens))
         documents = [[word for word in doc if word not in unique_tokens] for doc in texts]
         chapter_indices = self.dict["chapter_indices"]
