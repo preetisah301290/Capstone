@@ -83,10 +83,11 @@ class Books(object):
         if not self.dict:
             self.get_dict()
         texts = self.dict["filtered_text"]
-        documents = []
-        for k in sorted(texts.keys()):
-            documents.extend(texts[k])
-        all_tokens = Counter(documents)
+        documents = [texts[k] for k in sorted(texts.keys())]
+        all_tokens = []
+        for tokens in documents:
+            all_tokens.extend(tokens)
+        all_tokens = Counter(all_tokens)
         unique_tokens = set(filter(lambda x: all_tokens[x] ==1,all_tokens))
         documents = [[word for word in doc if word not in unique_tokens] for doc in documents]
         # Create Dictionary.

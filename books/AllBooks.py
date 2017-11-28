@@ -172,6 +172,9 @@ class AllBooks(Books):
             self.book_names.append(book.book_name)
             filter_text = d["filtered_text"]
             texts.extend([filter_text[k] for k in sorted(filter_text.keys())])
+        all_tokens = []
+        for tokens in texts:
+            all_tokens.extend(tokens)
         all_tokens = Counter(sum(texts, []))
         unique_tokens = set(filter(lambda x: all_tokens[x] ==1,all_tokens))
         documents = [[word for word in doc if word not in unique_tokens] for doc in texts]
