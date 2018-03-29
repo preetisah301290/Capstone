@@ -16,7 +16,7 @@ class Books(object):
                       self.topic_modelling,
                       ]
         self.bias = 0.000001
-        self.num_topics = 10
+        self.num_topics = 26
 
     def fetch_data(self):
         """
@@ -49,6 +49,10 @@ class Books(object):
     def baseline(self):
         if not self.dict:
             self.get_dict()
+        filtered_text=dict()
+        for k,v in self.dict['raw_text'].items():
+            filtered_text[k] = clean_data(v)
+        self.dict['filtered_text'] = filtered_text
         #bag of words by chapter
         bag_of_words = get_bag_of_words_by_chapter(self.dict['filtered_text'])
         self.dict["bag_of_words"] = bag_of_words

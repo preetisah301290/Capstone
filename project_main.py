@@ -1,5 +1,5 @@
 import argparse
-from books.Buddhist import Buddhist
+from books.Buddhism import Buddhism
 from books.Taoteching import TaoTeChing
 from books.Upnishad import Upnishad
 from books.YogaSutra import YogaSutra
@@ -12,7 +12,7 @@ from books.AllBooks import AllBooks
 from util import *
 
 books_to_process = [
-    Buddhist,
+    Buddhism,
     TaoTeChing,
     Upnishad,
     YogaSutra,
@@ -27,7 +27,7 @@ def project_run():
     parser = argparse.ArgumentParser()
     parser.add_argument("--step", help="starting step")
     args = parser.parse_args()
-    step = 1
+    step = 0
     if not args.step:
         step = int(step)
     for b in books_to_process:

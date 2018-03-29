@@ -9,6 +9,11 @@ input_path = "DataInput/"
 buddhist_link = "https://www.accesstoinsight.org/lib/study/truths.html"
 taoteching_input_file = "TaoTeChing.txt"
 stop_words = set(stopwords.words('english'))
+
+buddhism_file="Buddhism.txt"
+buddhism_studyline=[(93,169),(174,217),(222,262),(265,318),(323,379),(384,436),(441,478),(483,538),(543,590),(595,652),
+                    (657,694),(699,734),(739,778),(783,844),(849,889),(894,934),(939,983),(988,1066),(1071,1123),(1128,1189),
+                    (1194,1250),(1255,1310),(1315,1368),(1373,1475),(1480,1561),(1566,1718)]
 upnishad_file="Upnishads.txt"
 upnishad_studyline=[(334,579),(675,979),(986,1322),(1329,1552),(1558,1731),(1737,1874),(1880,2088),(2150,2257),(2263,2375),(2380,2485),(2491,2589)]
 yogasutra_file="YogaSutra.txt"

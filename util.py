@@ -10,9 +10,12 @@ from constants import csv_path, pickle_path, plot_path
 def clean_data(data):
     sents = sent_tokenize(data)
     words = list()
+    extra_words = ["thy", "thou", "thee", "thus", "shall", "can", "may", "hath", "with", "without", "let", "there"]
     for sent in sents:
         words.extend(word_tokenize(sent))
-    words = [w.lower() for w in words if not w.lower() in stop_words]
+    words = [w.strip().lower() for w in words if w.strip().lower() not in stop_words]
+    words = [w.strip().lower() for w in words if w.strip().lower() not in extra_words]
+    #import pdb; pdb.set_trace()
     words = [re.sub(r"[^a-zA-Z]+", '', w) for w in words]
     words = [w for w in words if w!='']
     return words

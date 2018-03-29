@@ -23,7 +23,22 @@ class AllBooks(Books):
         self.all_books = all_books
         self.book_names = []
         self.dict = {}
-        self.num_topics = 10
+        self.num_topics = 26
+
+
+
+    def write_corpus(self):
+
+        f= open("Complete_data","w+")
+        for i,b in enumerate(self.all_books):
+            book =b()
+            d = book.get_dict()
+            raw_text=d['raw_text']
+            for k in sorted(raw_text.keys()):
+                text = raw_text[k]
+                text = text.replace("\n"," ")
+                f.write(str(i)+"."+str(k)+"\n"+text+"\n")
+        f.close()
 
     def baseline(self):
         total_counter = Counter()
@@ -184,14 +199,24 @@ class AllBooks(Books):
         mm = [id2word.doc2bow(text) for text in texts]
         lda = models.ldamodel.LdaModel(corpus=mm, id2word=id2word, num_topics=self.num_topics, \
                                update_every=1, chunksize=10000, passes=1)
+
         lda_corpus = lda[mm]
         lda_DTM = [[0]*self.num_topics for i in range(len(texts))]
         for doc_num, doc in enumerate(lda_corpus):
             for topic in doc:
                 topic_id,score=topic
                 lda_DTM[doc_num][topic_id] = score
+
         topics = lda.print_topics()
-        topic_names = ["Topic{}".format(topic[0]) for topic in topics]
+
+        words_each_topic = dict(topics)
+        for k,v in words_each_topic.items():
+            x=v.split("+")
+            y=[z.split("*")[1].replace("\"","") for z in x]
+            words_each_topic[k] = y
+            print(k,y)
+        topic_names = ["Topic{}".format(i) for i in range(self.num_topics)]
+        print("topic names :",topic_names)
         self.dict["topics"] = topics
         self.dict["topic_names"] = topic_names
         self.dict["LDA_DTM"] = lda_DTM
@@ -200,6 +225,7 @@ class AllBooks(Books):
         execute_similatity_matrix(lda_DTM,  type=self.book_name, label="lda", col_row_labels=row_labels)
         of = open(pickle_path+self.book_name+".pickle","wb")
         pickle.dump(self.dict, of)
+
 
     def topic_modelling_extend(self):
         print("processing for {} and  extend topic modeling log".format(self.book_name))
