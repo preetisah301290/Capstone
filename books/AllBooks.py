@@ -58,7 +58,8 @@ class AllBooks(Books):
             chapter_indices[book.book_name] = (chapter_start, chapter_start+len(d['chapter_labels'])-1)
             chapter_start = chapter_start + len(d['chapter_labels'])
         DTM,unique_words = get_DTM_from_counter(total_counter,dicts=[bow_d[i] for i in self.book_names], return_words=True)
-        headers = sorted(unique_words, key=unique_words.get)
+        #headers = sorted(unique_words, key=unique_words.get)
+        headers=unique_words
         save_to_csv('{}_baseline_DTM.csv'.format(self.book_name),DTM, headers)
         self.dict["DTM"] = DTM
         self.dict["unique_words"] = headers

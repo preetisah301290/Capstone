@@ -30,6 +30,8 @@ def project_run():
     step = 0
     if not args.step:
         step = int(step)
+
+
     for b in books_to_process:
         book = b()
         print("processing for {}".format(book.book_name))

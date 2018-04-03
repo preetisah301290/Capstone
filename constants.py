@@ -6,7 +6,7 @@ csv_path = "DataCSV/"
 pickle_path = "DataPickle/"
 plot_path = "DataPlots/"
 input_path = "DataInput/"
-buddhist_link = "https://www.accesstoinsight.org/lib/study/truths.html"
+#buddhist_link = "https://www.accesstoinsight.org/lib/study/truths.html"
 taoteching_input_file = "TaoTeChing.txt"
 stop_words = set(stopwords.words('english'))
 
@@ -17,6 +17,7 @@ buddhism_studyline=[(93,169),(174,217),(222,262),(265,318),(323,379),(384,436),(
 upnishad_file="Upnishads.txt"
 upnishad_studyline=[(334,579),(675,979),(986,1322),(1329,1552),(1558,1731),(1737,1874),(1880,2088),(2150,2257),(2263,2375),(2380,2485),(2491,2589)]
 yogasutra_file="YogaSutra.txt"
+#yogasutra_studyline=[(129,703),(752,1538),(1627,2597),(2638,3370)]
 yogasutra_studyline=[(129,703),(752,1538),(1627,2597),(2638,3370)]
 BookProverb_file="BookProverb.txt"
 BookProverb_studyline=[(99,195),(198,260),(263,359),(362,441),(444,509),(512,619),(622,697),(700,798),(801,853),(856,952),
